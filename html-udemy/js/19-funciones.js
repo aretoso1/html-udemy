@@ -3,8 +3,12 @@
 //Funciones
 
 function calculadora(){
-    console.log("Hola soy la calculadora");
-    console.log("Soy memito");
+    console.log("Suma "+(10+8));
+    console.log("Resta "+(10-8));
+    console.log("Multiplicación "+(10*8));
+    console.log("División "+(10/8));
+    //console.log("Hola soy la calculadora");
+    //console.log("Soy memito");
     return "Hola soy la calculadora";
 }
 
