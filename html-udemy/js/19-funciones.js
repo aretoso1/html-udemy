@@ -17,5 +17,10 @@ function calculadora(numero1,numero2){
 //calculadora();
 //calculadora();
 
-var resultado=calculadora(2,5);
-console.log(resultado);
+//var resultado=calculadora(2,5);
+//console.log(resultado);
+
+for(var i=1; i<=10;i++){
+    console.log(i);
+    calculadora(i,10);
+}
