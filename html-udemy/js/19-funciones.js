@@ -2,11 +2,12 @@
 
 //Funciones
 
-function calculadora(){
-    console.log("Suma "+(10+8));
-    console.log("Resta "+(10-8));
-    console.log("Multiplicación "+(10*8));
-    console.log("División "+(10/8));
+function calculadora(numero1,numero2){
+    console.log("Suma "+(numero1+numero2));
+    console.log("Resta "+(numero1-numero2));
+    console.log("Multiplicación "+(numero1*numero2));
+    console.log("División "+(numero1/numero2));
+    console.log("******************************");
     //console.log("Hola soy la calculadora");
     //console.log("Soy memito");
     return "Hola soy la calculadora";
@@ -16,5 +17,5 @@ function calculadora(){
 //calculadora();
 //calculadora();
 
-var resultado=calculadora();
+var resultado=calculadora(2,5);
 console.log(resultado);
