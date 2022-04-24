@@ -5,7 +5,7 @@
 var numero=444;
 var texto1= "Bienvendio a nuestro portal de portal clientes";
 var texto2= "Tenemos un servicio de matemáticas aplicadas";
-
+var texto3="   Bienvendio a nuestro portal de portal clientes    ";
 // Método .toString()
 
 var dato= numero.toString();
@@ -96,3 +96,30 @@ console.log(busqueda10);
 
 var busqueda11=texto1.includes("clientes");
 console.log(busqueda11);
+
+//Si queremos reemplazar una palabra .replace()
+
+var busqueda12=texto1.replace("Bienvendio","Bienvenido");
+console.log(busqueda12);
+
+//Si queremos pedazo del texto usamos .slice() debemos especificar las posiciones de inicio y fin
+
+var busqueda13=texto1.slice(21,42);
+console.log(busqueda13);
+
+//Si queremos guardar el texto en un array usamos .split()
+
+var busqueda14=texto1.split();
+console.log(busqueda14);
+
+//Si queremos guardar cada palabra del texto en un array por separado usamos .split(" ")
+
+var busqueda15=texto1.split(" ");
+console.log(busqueda15);
+
+//Si queremos quitar los espacios al inicio o al final de un texto usamos el método .trim() útil cuando guardamos correos o nombres
+
+var busqueda16=texto3.trim();
+console.log(texto3);
+console.log("*****************************************");
+console.log(busqueda16);
