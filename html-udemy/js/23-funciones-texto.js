@@ -3,7 +3,7 @@
 //Transformación de texto
 
 var numero=444;
-var texto1= "Bienvendio a nuestro portal de clientes";
+var texto1= "Bienvendio a nuestro portal de portal clientes";
 var texto2= "Tenemos un servicio de matemáticas aplicadas";
 
 // Método .toString()
@@ -42,4 +42,57 @@ var textoTotal2=texto1.concat(". "+texto2);
 console.log(textoTotal1);
 console.log(textoTotal2);
 
+//busqueda de textos mediante .indexOf() nos da la primera posición donde empieza la palabra
 
+var busqueda=texto1.indexOf("portal");
+console.log(busqueda);
+
+//Cuando no hay coincidencia nos muestra un -1
+var busqueda2=texto1.indexOf("saca");
+console.log(busqueda2);
+
+//busqueda de textos mediante .lastIndexOf() nos da la última posición donde empieza la palabra
+
+var busqueda3=texto1.lastIndexOf("portal");
+console.log(busqueda3);
+
+//busqueda de textos mediante .search() nos da la primera posición donde empieza la palabra es similar a .indexOf()
+
+var busqueda4=texto1.search("portal");
+console.log(busqueda4);
+
+//busqueda de textos mediante .match() nos da un array mas interesante cuando quremos el número de coincidencias etc
+
+var busqueda5=texto1.match("portal");
+console.log(busqueda5);
+
+//Si queremos máss busquedas de palabras mediante .match() debemos agregar //g
+
+var busqueda6=texto1.match(/portal/g);
+console.log(busqueda6);
+
+//Si queremos quitar palabras desde cierta posición y cantidad de palabras usamos substr()
+
+var busqueda7=texto1.substr(21,6);
+console.log(busqueda7);
+
+//Si queremos quitar una palabra en concreto usamos chartAt()
+
+var busqueda8=texto1.charAt(40);
+console.log(busqueda8);
+
+//Si queremos buscar lo que esta al inicio startsWith()
+
+var busqueda9=texto1.startsWith("Bi");
+console.log(busqueda9);
+
+//Si queremos buscar lo que esta al final endsWith()
+
+var busqueda10=texto1.endsWith("clientes");
+console.log(busqueda10);
+
+
+//Si queremos buscar una palabra .includes()
+
+var busqueda11=texto1.includes("clientes");
+console.log(busqueda11);
