@@ -6,6 +6,7 @@ var div_user=document.querySelector("#usuarios");
 var div_user2=document.querySelector("#usuarios2");
 var div_user3=document.querySelector("#usuarios3");
 var div_janet=document.querySelector("#janet");
+var div_diplomado=document.querySelector("#diplomado");
 var users= [];
 var users2=[];
 var user3=[];
@@ -67,12 +68,18 @@ getUsuarios()
 .then(data=> data.json())
 .then(data =>{
     listadoUsuario2(data.data)
+    return getInfo();
     
+})
+.then(data =>{
+    div_diplomado.innerHTML=data;
     return getJanet();
 })
 .then(data => data.json())
 .then(janet =>{
     mostrarJanet(janet.data)
+
+    
 });
 
 function listadoUsuario2(user3){
@@ -103,5 +110,33 @@ function mostrarJanet(userr){
     div_janet.appendChild(avatar);
     div_janet.querySelector("#janet .loading").style.display="none";
     
+
+}
+
+// Ahora crearemos una promesa dentro de una función
+
+function getInfo(){
+    var diplomado={
+        titulo:"Métodos de Machine Learning",
+        inicio:"20 de mayo de 2022",
+        fin: "20 de agosto de 2022"
+    };
+
+    return new Promise((resolve,reject)=>{
+        var diplomado_string="";
+
+
+        setTimeout(function(){
+             diplomado_string=JSON.stringify(diplomado);
+             if(typeof diplomado_string != 'string' || diplomado == "") return reject('error 1');
+
+            return resolve(diplomado_string);
+
+
+        },3000);
+
+
+    });
+
 
 }
