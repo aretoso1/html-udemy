@@ -4,6 +4,22 @@
 	<meta charset="utf-8">
 	<title>Ejercicio DOM, eventos y funciones</title>
 	<script type="text/javascript" src="js/32-ejercicio-DOM.js"></script>
+	<style>
+		.box{
+			width: 200px;
+			height: 250px;
+			float: left;
+			margin: 20px;
+		}
+		.dashed{
+			border: 3px dashed blueviolet;
+			padding: 3px;
+		}
+		.dashed2{
+			border: 3px dashed palevioletred;
+			padding: 3px;
+		}
+	</style>
 </head>
 <body>
 <!--
@@ -14,8 +30,8 @@
 -->
 
 <h1>Ejercicio DOM, eventos y funciones curso JS victorroblesweb.es</h1>
-<p>
-	<form action="" method="POST" >
+<div class="box">
+	<form action="#" method="POST" id="formulario" onsubmit="return false" >
 		<label for="nombre" >Nombre:</label><br/>
 		<input type="text" name="nombre" id="nombre"><br/>
 
@@ -30,7 +46,35 @@
 
 	</form>
 
-</p>
+</div>
+
+<div class="box dashed">
+	<h3>Información del usuario</h3>
+	<hr>
+
+</div>
+
+
+<div class="box dashed2">
+	<h3>Información del usuario</h3>
+	<hr>
+	<p id="p_nombre">
+		Nombre: <span></span>
+
+	</p>
+	<hr>
+	<p id="p_apellidos">
+		Apellidos: <span></span>
+
+	</p>
+	<hr>
+	<p id="p_edad">
+		Edad: <span></span>
+
+	</p>
+
+
+</div>
 
 
 </body>
