@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Aprendiendo Jquery</title>
+        
+        <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                console.log('JQuery y la web cargados')
+            })
+        </script> -->
+        <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="js/01-selectores.js"></script>
+        <style>
+            .zebra{
+                border: 5px dashed pink;
+            }
+            .grande{
+                font-size: 20px;
+                border: 5px solid gray;
+            }
+            .margen-superior{
+                display: block;
+                margin-top: 45px;
+            }
+            .resaltado{
+                border-bottom: 2px solid green;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <h1>Rastaman vibration yeah positive</h1>
+        <ul>
+            <li><a href="https://www.globovision.com/" title="Globovision">Ir a Globovisión</a></li>
+            <li><a href="https://es.tradingview.com/chart/?symbol=BITSTAMP%3ABTCUSD" title="BTC">Gráfica de Bitcoin</a></li>
+            <li><a href="https://www.youtube.com/" title="youtube">Videos para hacer mejor tu día</a></li>
+        </ul>
+        <p id="rojo" class="zebra"> I'm a red text</p>
+        <p id="amarillo" class="sin-borde">Otro test de párrafo</p>
+        <p id="blue" class="zebra">I sing a song</p>
+
+        <div id="caja">
+            <p>Hello I am  a Box</p>
+            <ul>
+                <li>First element</li>
+                <li class="resaltado"> Second element</li>
+            </ul>
+            <span class="resaltado">Mira como lo agarra</span>
+
+        </div>
+
+    </body>
+</html>

@@ -72,6 +72,7 @@ getUsuarios()
     
 })
 .then(data =>{
+    console.log(data)
     div_diplomado.innerHTML=data;
     return getJanet();
 })
@@ -80,6 +81,10 @@ getUsuarios()
     mostrarJanet(janet.data)
 
     
+})
+.catch(error=>{
+    console.log(error+'ffdf');
+    alert('La url no existe');
 });
 
 function listadoUsuario2(user3){
